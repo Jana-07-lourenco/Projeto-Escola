@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Estudos - Estilo Notion</title>
+    <link rel="stylesheet" href="escola.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <span>🚀</span> Espaço de Trabalho
+        </div>
+        <div class="sidebar-menu-item active">
+         
+            <span>🎓</span> Painel de Estudos
+        </div>
+        <div class="sidebar-menu-item">
+            <span>📅</span> Calendário Geral
+        </div>
+        <div class="sidebar-menu-item">
+            <span>⚙️</span> Configurações
+        </div>
+        <div class="banner">
+ <img src="./adolescente deitada.webp" alt="Imagem Adolescente vendo um Nootbook" class="cover-image"> 
+  </div> 
+    </div>
+    
+ 
+ <div class="main-container">
+        
+        <div class="cover-image"></div>
+
+        <div class="content-wrapper">
+            <div class="page-icon">🎓</div>
+
+            <h1>Meu Painel de Estudos</h1>
+            
+            <div class="callout">
+                <span>💡</span>
+                <div><em>"O sucesso é a soma de pequenos esforços repetidos dia após dia."</em></div>
+            </div>
+
+            <h2>⚡ Acesso Rápido</h2>
+            <div class="grid-links">
+                <a href="#" class="link-card" target="_blank">
+                    <span>🔗</span>
+                    <div>
+                        <div class="link-title">Plataforma de Aulas</div>
+                        <div class="link-subtitle">Portal da faculdade/escola</div>
+                    </div>
+                </a>
+                <a href="#" class="link-card" target="_blank">
+                    <span>📅</span>
+                    <div>
+                        <div class="link-title">Calendário Académico</div>
+                        <div class="link-subtitle">PDF oficial de prazos</div>
+                    </div>
+                </a>
+            </div>
+
+            <h2>📅 Visão Geral da Semana</h2>
+            <div id="weekly-tasks">
+                <div class="todo-item">
+                    <input type="checkbox" id="task1">
+                    <span><strong>Segunda:</strong> Assistir aula de Matéria 1 + Revisar resumo</span>
+                </div>
+                <div class="todo-item">
+                    <input type="checkbox" id="task2">
+                    <span><strong>Terça:</strong> Entregar trabalho de Matéria 1</span>
+                </div>
+                <div class="todo-item">
+                    <input type="checkbox" id="task3">
+                    <span><strong>Quarta:</strong> Ler o capítulo 3 do livro indicado</span>
+                </div>
+                <div class="todo-item">
+                    <input type="checkbox" id="task4">
+                    <span><strong>Quinta:</strong> Assistir aula de Matéria 2</span>
+                </div>
+                <div class="todo-item">
+                    <input type="checkbox" id="task5">
+                    <span><strong>Sexta:</strong> Revisão geral e organizar a próxima semana</span>
+                </div>
+            </div>
+
+            <h2>📚 Minhas Matérias</h2>
+            <div class="subjects-grid">
+                <div class="subject-card">
+                    <h3>📑 Matéria 1</h3>
+                    <ul>
+                        <li><strong>Professor:</strong> Felipe Brito</li>
+                        <li><strong>E-mail:</strong> felipe.brito@escola.com</li>
+                        <li><strong>Avaliação:</strong> Prova (40%) + Trabalho (60%)</li>
+                    </ul>
+                </div>
+                <div class="subject-card">
+                    <h3>📑 Matéria 2</h3>
+                    <ul>
+                        <li><strong>Professor:</strong> Karina Peres</li>
+                        <li><strong>E-mail:</strong> karina.peres@escola.com</li>
+                        <li><strong>Avaliação:</strong> Prova Única (100%)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2>📅 Cronograma de Entregas e Provas</h2>
+            <div class="db-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Atividade / Prova</th>
+                            <th>Matéria</th>
+                            <th>Data de Entrega</th>
+                            <th>Status</th>
+                            <th>Nota</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Resenha Crítica</strong></td>
+                            <td>Matéria 1</td>
+                            <td>15/Junho/2026</td>
+                            <td><span class="badge doing">Fazendo</span></td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Prova Bimestral</strong></td>
+                            <td>Matéria 2</td>
+                            <td>22/Junho/2026</td>
+                            <td><span class="badge todo">Não iniciado</span></td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Trabalho em Grupo</strong></td>
+                            <td>Matéria 1</td>
+                            <td>05/Julho/2026</td>
+                            <td><span class="badge done">Concluído</span></td>
+                            <td>9.5</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2>💡 Banco de Ideias e Leituras</h2>
+            <div id="ideas-list">
+                <div class="todo-item">
+                    <input type="checkbox" id="idea1">
+                    <span><strong>Artigo:</strong> "Tendências de Mercado 2026" — <em>Ler para o trabalho final.</em></span>
+                </div>
+                <div class="todo-item">
+                    <input type="checkbox" id="idea2">
+                    <span><strong>Livro:</strong> <em>Design de Interface 101</em> — Disponível na biblioteca.</span>
+                </div>
+            </div>
+
+            <div class="quick-add">
+                <input type="text" id="new-idea-input" placeholder="Adicionar nova ideia ou leitura à lista...">
+                <button id="add-idea-btn">Adicionar</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="escola.js"></script>
+</body>
+</html>
